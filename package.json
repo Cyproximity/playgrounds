@@ -1,0 +1,29 @@
+{
+  "name": "playgrounds",
+  "version": "1.0.0",
+  "description": "facebook react ui playground",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyproximity/playgrounds.git"
+  },
+  "author": "gerald agustin (gerald.agustin09@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cyproximity/playgrounds/issues"
+  },
+  "homepage": "https://github.com/Cyproximity/playgrounds#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
