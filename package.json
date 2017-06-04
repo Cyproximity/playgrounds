@@ -1,7 +1,7 @@
 {
   "name": "playgrounds",
   "version": "1.0.0",
-  "description": "facebook react ui playground",
+  "description": "my playground portfolio in facebook's reactjs",
   "private": true,
   "repository": {
     "type": "git",
