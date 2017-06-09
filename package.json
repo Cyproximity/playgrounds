@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/Cyproximity/playgrounds#readme",
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1",
@@ -29,6 +30,7 @@
     "babel-loader": "7.0.0",
     "babel-preset-react-app": "^3.0.0",
     "babel-runtime": "6.23.0",
+    "bundle-loader": "^0.5.5",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
     "chalk": "1.1.3",
     "css-loader": "0.28.1",

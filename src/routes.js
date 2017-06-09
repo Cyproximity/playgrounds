@@ -5,16 +5,20 @@ import {
   Route,
 } from 'react-router-dom';
 
-import home from './routes/home';
-import about from './routes/about';
-import error404 from './routes/error404';
+import asynchronousComponent from './asyncComponent';
+
+const Home = asynchronousComponent(() => System.import('./routes/home').then(module => module.default));
+const About = asynchronousComponent(() => System.import('./routes/about').then(module => module.default));
+const Exps = asynchronousComponent(() => System.import('./routes/experience').then(module => module.default));
+const Error404 = asynchronousComponent(() => System.import('./routes/experience').then(module => module.default));
 
 const Routes = () => (
   <Router>
     <Switch>
-      <Route exact path="/" component={home} />
-      <Route path="/me" component={about} />
-      <Route component={error404} />
+      <Route exact path="/" component={Home} />
+      <Route path="/me" component={About} />
+      <Route path="/experience" component={Exps} />
+      <Route component={Error404} />
     </Switch>
   </Router>
 );
