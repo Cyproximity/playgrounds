@@ -7,5 +7,5 @@ const App = () => (
   <div><Routes /></div>
 );
 
-ReactDOM.render(<App />, document.getElementById('core'));
+ReactDOM.render(<App />, document.getElementById('react-core'));
 registerServiceWorker();
