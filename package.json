@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/Cyproximity/playgrounds#readme",
   "dependencies": {
+    "animejs": "^2.0.2",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
