@@ -1,0 +1,135 @@
+.wholeview-navigation {
+  display: flex;
+  position: fixed;
+  background: var(--teal-bg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.halfview {
+  position: relative;
+  width: 50%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.halfview h5 {
+  color: var(--metal-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-cabin);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 30px 0;
+}
+
+.halfview h5 i {
+  margin: 0 10px 0 0;
+}
+
+.right {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.core-navigation, .core-contact {
+  color: #FFFFFF;
+  max-width: 520px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.core-navigation h3, .core-contact h3 {
+  font-size: 2.2rem;
+  font-family: var(--font-lora);
+}
+
+.micro-navsocial {
+  margin: 20px 0 0 0;
+  display: flex;
+}
+
+.micro-navsocial li {
+  font-family: var(--font-cabin);
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  margin-left: 1.7em;
+  position: relative;
+}
+
+.micro-navsocial li:first-child {
+  margin-left: 0;
+}
+.micro-navsocial li:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.4em;
+  width: 0.4em;
+  background: #FFF;
+  border-radius: 50%;
+  right: -1em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.micro-navsocial li:last-child:after {
+  display: none;
+}
+
+.micro-navsocial li > a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: all ease 300ms;
+}
+
+.micro-navsocial li > a:hover {
+  color: var(--orange);
+}
+
+.core-links {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .core-navigation, .core-contact {
+    height: 260px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wholeview-navigation {
+    flex-direction: column-reverse;
+  }
+  .halfview {
+    width: 100%;
+    padding: 0;
+  }
+  .left {
+    flex: 0 0 30%;
+  }
+  .right {
+    flex: 1 0 70%;
+  }
+  .halfview h5  {
+    display: none;
+  }
+  .core-navigation, .core-contact {
+    height: auto;
+  }
+  .core-links {
+    text-align: center;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .core-navigation h3, .core-contact h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
