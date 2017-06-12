@@ -8,21 +8,28 @@ class VerticalNav extends React.Component {
       isNavWindowOpen: false,
     };
   }
+
+  showWindowNav = () => {
+    const { isNavWindowOpen } = this.state;
+    this.setState({ isNavWindowOpen: !isNavWindowOpen });
+  }
+
   render() {
+    const { isNavWindowOpen } = this.state;
     return (
       <div>
         {/* hamburger menu */}
         <div className="core-humbermenu--container">
-          <span className="hm--wrapper-box">
+          <button className="hm--wrapper-box" onClick={this.showWindowNav}>
             <span className="hm--lines">
               <span className="lines" />
               <span className="lines" />
               <span className="lines" />
             </span>
-          </span>
+          </button>
         </div>
         {/* fullnav */}
-        <div className="wholeview-navigation">
+        <div className={`wholeview-navigation${(isNavWindowOpen ? ' show' : '')}`}>
           <div className="halfview left">
             <div className="core-contact">
               <h5><i className="ion-ios-arrow-forward" />Contact</h5>
