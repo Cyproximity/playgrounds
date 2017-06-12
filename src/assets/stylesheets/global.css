@@ -8,6 +8,11 @@
   --font-gochi: 'Gochi Hand', cursive;
 }
 
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,9 +57,14 @@ table {
 	border-spacing: 0;
 }
 
+div {
+  display: block;
+}
+
 body {
   font-family: var(--font-lora);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--font-dark);
+  user-select: none;
 }

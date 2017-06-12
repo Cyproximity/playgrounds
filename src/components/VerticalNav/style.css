@@ -95,6 +95,31 @@
   margin-bottom: 10px;
 }
 
+.core-humbermenu--container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 10;
+  padding: 1rem;
+}
+
+.hm--wrapper-box {
+  position: relative;
+  height: 46px;
+  width: 46px;
+  background: #FFFFFF;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hm--wrapper-box .hm--lines {
+  width: 26px;
+  height: 26px;
+  display: flex;
+}
 @media only screen and (max-width: 1366px) {
   .core-navigation, .core-contact {
     height: 260px;
