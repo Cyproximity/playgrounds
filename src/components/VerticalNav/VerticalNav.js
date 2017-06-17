@@ -1,5 +1,9 @@
 import React from 'react';
+
 import './style.css';
+import './responsive.css';
+import './keyframes.css';
+import Anime from '../../configs/AnimeComponent';
 
 class VerticalNav extends React.Component {
   constructor(props) {
@@ -17,16 +21,24 @@ class VerticalNav extends React.Component {
   render() {
     const { isNavWindowOpen } = this.state;
     return (
-      <div>
+      <div className={`nav--wrapper${(isNavWindowOpen ? ' isopen' : '')}`}>
         {/* hamburger menu */}
         <div className="core-humbermenu--container">
-          <button className="hm--wrapper-box" onClick={this.showWindowNav}>
-            <span className="hm--lines">
-              <span className="lines" />
-              <span className="lines" />
-              <span className="lines" />
-            </span>
-          </button>
+          <Anime easing="easeOutElastic" loop={false} duration={1000} scale={[0.8, 1]}>
+            <button className="hm--wrapper-box" onClick={this.showWindowNav}>
+              <span className="hm-a-lines--wrapper">
+                <div className="lines open">
+                  <span className="a--lines" />
+                  <span className="a--lines" />
+                  <span className="a--lines" />
+                </div>
+                <div className="lines close">
+                  <span className="a--lines" />
+                  <span className="a--lines" />
+                </div>
+              </span>
+            </button>
+          </Anime>
         </div>
         {/* fullnav */}
         <div className={`wholeview-navigation${(isNavWindowOpen ? ' show' : '')}`}>
