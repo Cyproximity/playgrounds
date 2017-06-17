@@ -28,11 +28,24 @@
     text-align: center;
     margin: 20px auto 0 auto;
   }
+
+  .micro-navsocial {
+    width: 80%;
+    margin: 15px auto 0 auto;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   .core-navigation h3, .core-contact h3 {
-    font-size: 1.5em;
+    font-size: 1.35em;
     text-align: center;
+  }
+
+  .micro-navsocial {
+    width: 100%;
+  }
+
+  .micro-navsocial li {
+    font-size: 0.8em;
   }
 }
