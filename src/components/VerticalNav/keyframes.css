@@ -4,14 +4,25 @@
     transform-origin: 100% 100%;
   }
   100% {
-    transform: scaleY(0) translateY(10px);
+    transform: scaleY(0) translateY(12px);
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes close-out-2 {
+  0% {
+    transform: scaleX(1) translate(0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(0) translateX(12px);
     transform-origin: 100% 100%;
   }
 }
 
 @keyframes close-in-1 {
   0% {
-    transform: scaleY(0) translateY(-10px);
+    transform: scaleY(0) translateY(-12px);
     transform-origin: 0 0;
   }
   100% {
@@ -22,7 +33,7 @@
 
 @keyframes close-in-2 {
   0% {
-    transform: scaleX(0) translateX(-10px);
+    transform: scaleX(0) translateX(-12px);
     transform-origin: 0 0;
   }
   100% {

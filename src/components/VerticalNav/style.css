@@ -177,3 +177,35 @@
   animation-delay: 0;
   animation-timing-function: linear;
 }
+
+.hm-a-lines--wrapper .close {
+  transform: rotate(45deg);
+}
+
+.close .a--lines {
+  background: var(--teal-bg);
+  position: absolute;
+}
+
+
+.close .a--lines:nth-child(1) {
+  width: 2px;
+  height: 16px;
+  animation: close-out-1 0.3s linear 0.1s 1 normal forwards;
+  transform: scaleY(0);
+}
+
+.close .a--lines:nth-child(2) {
+  width: 16px;
+  height: 2px;
+  animation: close-out-2 0.3s linear 0s 1 normal forwards;
+  transform: scaleX(0);
+}
+
+.nav--wrapper.isopen .close .a--lines:nth-child(1) {
+  animation: close-in-1 0.3s linear 0.6s 1 normal forwards;
+}
+
+.nav--wrapper.isopen .close .a--lines:nth-child(2) {
+  animation: close-in-2 0.3s cubic-bezier(0.23, 0.82, 0.67, 1.16) 0.5s 1 normal forwards;
+}

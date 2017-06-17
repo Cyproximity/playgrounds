@@ -27,12 +27,12 @@ class VerticalNav extends React.Component {
           <Anime easing="easeOutElastic" loop={false} duration={1000} scale={[0.8, 1]}>
             <button className="hm--wrapper-box" onClick={this.showWindowNav}>
               <span className="hm-a-lines--wrapper">
-                <div className="lines open">
-                  <span className="a--lines" />
+                <div className="lines close">
                   <span className="a--lines" />
                   <span className="a--lines" />
                 </div>
-                <div className="lines close">
+                <div className="lines open">
+                  <span className="a--lines" />
                   <span className="a--lines" />
                   <span className="a--lines" />
                 </div>
