@@ -1,7 +1,7 @@
 .wholeview-navigation {
   display: flex;
   position: fixed;
-  background: var(--teal-bg);
+  background: transparent;
   top: 0;
   left: 0;
   right: 0;
@@ -36,8 +36,11 @@
   margin: 0 10px 0 0;
 }
 
+.left {
+  background: var(--teal-bg);
+}
 .right {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--teal-bg-sub);
 }
 
 .core-navigation, .core-contact {
