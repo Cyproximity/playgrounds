@@ -44,7 +44,7 @@ class VerticalNav extends React.Component {
         <div className={`wholeview-navigation${(isNavWindowOpen ? ' show' : '')}`}>
           <div className="halfview left">
             <div className="core-contact">
-              <Anime easing="easeInOutQuad" loop={false} duration={300} delay={(el, index) => index * 130} opacity={(isNavWindowOpen ? 1 : 0)} translateY={(isNavWindowOpen ? '0' : '150%')}>
+              <Anime easing="easeOutBack" loop={false} duration={300} delay={(el, index) => index * 130} opacity={(isNavWindowOpen ? 1 : 0)} translateY={(isNavWindowOpen ? '0' : '150%')}>
                 <h5><i className="ion-ios-arrow-forward" />Contact</h5>
                 <h3>gerald.agustin09@gmail.com</h3>
                 <ul className="micro-navsocial">
@@ -58,7 +58,7 @@ class VerticalNav extends React.Component {
           </div>
           <div className="halfview right">
             <nav className="core-navigation">
-              <Anime easing="easeInOutQuad" loop={false} duration={300} delay={(el, index) => index * 90} opacity={(isNavWindowOpen ? 1 : 0)} translateY={(isNavWindowOpen ? '0' : '150%')}>
+              <Anime easing="easeOutBack" loop={false} duration={300} delay={(el, index) => index * 90} opacity={(isNavWindowOpen ? 1 : 0)} translateY={(isNavWindowOpen ? '0' : '150%')}>
                 <h5><i className="ion-ios-arrow-forward" />Navigation</h5>
                 <div className="core-links">
                   <h3>About</h3>
