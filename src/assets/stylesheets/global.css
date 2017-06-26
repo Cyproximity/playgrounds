@@ -2,7 +2,9 @@
   --teal-bg: #45E5DE;
   --teal-bg-sub: #7DEDE8;
   --orange: #FE8B61;
-  --metal-blue: #617197;
+  --cream-blue:#A9D0E7;
+  --metal-blue: #8CD6E6;
+  --dark-blue: #576887;
   --font-dark: #2F3130;
   --font-lora: 'Lora', serif;
   --font-cabin: 'Cabin', sans-serif;
@@ -68,4 +70,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--font-dark);
   user-select: none;
+}
+
+.fullscreen {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }

@@ -1,0 +1,32 @@
+.home-layout {
+  overflow: hidden;
+  background: var(--sky-blue);
+}
+
+.home-sections {
+  position: absolute;
+  z-index: 0;
+}
+
+.home-about {
+  top: 0;
+  left: 0;
+  width: 66.67%;
+  height: 100%;
+  background: var(--cream-blue);
+}
+
+.home-works, .home-studio {
+  width: 33.34%;
+  height: 50%;
+  right: 0;
+}
+
+.home-works {
+  background: var(--orange);
+}
+
+.home-studio {
+  bottom: 0;
+  background: var(--dark-blue);
+}

@@ -1,3 +1,11 @@
+.nav--wrapper {
+  z-index: 0;
+}
+
+.nav--wrapper.isopen {
+  z-index: 10;
+}
+
 .wholeview-navigation {
   display: flex;
   position: fixed;
@@ -12,6 +20,7 @@
 
 .wholeview-navigation.show {
   opacity: 1;
+  z-index: 9;
 }
 
 .halfview {
@@ -109,7 +118,7 @@
   top: 0;
   right: 0;
   cursor: pointer;
-  z-index: 1;
+  z-index: 10;
   padding: 1.5rem;
 }
 
